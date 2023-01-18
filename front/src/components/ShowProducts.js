@@ -38,17 +38,17 @@ const ShowProducts = () => {
             <div className='grid-rows-3'>
                 {
                     products.map((product, index) => (
-                        <div className="card card-compact w-96 bg-base-100 shadow-xl mt-20 mb-8" key={index}>
+                        <div className="card card-compact desktop:w-96 bg-base-100 shadow-xl mt-20 mb-8 iphone:w-20 iphone:ml-5" key={index}>
                             <img src={`${product.foto}`} alt="foto" />
                             <div className="card-body">
-                                <h2 className="card-title text-4xl">{product.nombre}</h2>
-                                <p className='text-2xl'>{product.precio}
-                                    <b className='text-sm'> ETH</b></p>
+                                <h2 className="card-title desktop:text-4xl iphone:text-sm">{product.nombre}</h2>
+                                <p className='desktop:text-2xl iphone:text-xs'>{product.precio}
+                                    <b className='desktop:text-sm iphone:text-xs'> ETH</b></p>
                                 <div className="card-actions justify-end">
-                                    <Link to={`/edit/${product._id}`} className="bg-sky-500 hover:bg-sky-700 text-2xl">Edit</Link>
+                                    <Link to={`/edit/${product._id}`} className="bg-sky-500 hover:bg-sky-700 desktop:text-2xl iphone:text-xs ">Edit</Link>
                                 </div>
                                 <div className="card-actions justify-end">
-                                    <button onClick={() => deleteProduct(product._id)} className="bg-sky-500 hover:bg-sky-700 text-2xl">Borrar</button>
+                                    <button onClick={() => deleteProduct(product._id)} className="bg-sky-500 hover:bg-sky-700 desktop:text-2xl desktop:h-12 iphone:text-xs iphone:h-8 ">Borrar</button>
                                 </div>
                             </div>
 

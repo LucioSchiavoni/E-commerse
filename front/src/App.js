@@ -14,7 +14,9 @@ import { ProtectedRoute } from "./login/ProtectedRoute";
 
 function App() {
   return (
-    <div className="bg-slate-200">
+
+    <div className=" bg-slate-200">
+
       <Router>
         <AuthProvider>
           <Header />
@@ -32,7 +34,9 @@ function App() {
         </AuthProvider>
       </Router>
       <Footer />
+
     </div>
+
   );
 }
 

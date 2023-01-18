@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}",
     './index.html'],
   theme: {
+    screens: {
+      'iphone': '375px',
+      'desktop': '1280px',
+    },
     colors: {
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
