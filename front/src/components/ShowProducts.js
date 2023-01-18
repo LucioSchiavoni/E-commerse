@@ -45,7 +45,7 @@ const ShowProducts = () => {
                                 <p className='desktop:text-2xl iphone:text-xs'>{product.precio}
                                     <b className='desktop:text-sm iphone:text-xs'> ETH</b></p>
                                 <div className="card-actions justify-end">
-                                    <Link to={`/edit/${product._id}`} className="bg-sky-500 hover:bg-sky-700 desktop:text-2xl iphone:text-xs ">Edit</Link>
+                                    <Link to={`/edit/${product._id}`} className="bg-sky-500 hover:bg-sky-700 desktop:text-2xl iphone:text-xs ">Editar</Link>
                                 </div>
                                 <div className="card-actions justify-end">
                                     <button onClick={() => deleteProduct(product._id)} className="bg-sky-500 hover:bg-sky-700 desktop:text-2xl desktop:h-12 iphone:text-xs iphone:h-8 ">Borrar</button>

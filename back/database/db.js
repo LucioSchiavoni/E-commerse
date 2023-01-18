@@ -1,8 +1,8 @@
 import mongoose from "mongoose"
 
 const url = 'mongodb://127.0.0.1:27017/db_lucio'
-
-mongoose.connect(url)
+const MONGODB_URI = "mongodb+srv://lucio:root123@cluster0.uedcvle.mongodb.net/lucio_db"
+mongoose.connect(MONGODB_URI)
 
 
 const db = mongoose.connection

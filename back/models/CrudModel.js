@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 const dbSchema = new Schema(
     {
         nombre: { type: String },
+        type: { type: String },
 
         foto: {
             base64: String,

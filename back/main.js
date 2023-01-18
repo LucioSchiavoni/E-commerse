@@ -1,6 +1,7 @@
 import express from 'express';
 import routes from './routes/routes.js';
 import db from "./database/db.js"
+import MONGODB_URI from './database/db.js'
 import bodyParser from 'body-parser'
 import cors from 'cors';
 import path from 'path';
