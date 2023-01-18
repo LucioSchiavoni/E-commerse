@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(27, 27, 30);
+    color: aliceblue;
+
+
+}
+
+.boton {
+    width: 4rem;
+    background-color: rgb(16, 102, 208);
+    color: aliceblue;
+    border-color: rgb(16, 102, 208);
+    border-radius: 0.2rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 20rem;
+    margin-top: 10rem;
+    font-size: 2rem;
+}
+
+.nav-item {
+
+    margin-left: 60rem;
+}
+
+.grid-rows-3 {
+    margin: auto;
+    max-width: 90rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+}
+
+.bg-sky-500 {
+    background-color: #0ea5e9;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.hover\:bg-sky-700:hover {
+    background-color: #0369a1;
+}
+
+.text-white {
+    color: rgb(230, 221, 221);
+}
+
+.text-black {
+    color: rgb(0 0 0);
+}
+
+
+.bg-blue-900 {
+    background-color: rgb(30 58 138);
+}
